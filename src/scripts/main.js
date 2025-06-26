@@ -12,13 +12,11 @@ start.addEventListener('click', () => {
     start.textContent = 'Restart';
     game.start();
     updateField();
-    // updateStatus();
   }
 
   if (start.textContent === 'Restart') {
     game.start();
     updateField();
-    // updateStatus();
   }
 });
 
@@ -52,7 +50,7 @@ function move() {
 document.addEventListener('keydown', (e) => {
   switch (e.key) {
     case 'ArrowUp':
-      event.preventDefault();
+      e.preventDefault();
       game.moveUp();
       move();
       break;
