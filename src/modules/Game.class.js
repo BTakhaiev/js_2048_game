@@ -165,13 +165,6 @@ class Game {
     this.checkLose();
   }
 
-  /**
-   * `idle` - the game has not started yet (the initial state);
-   * `playing` - the game is in progress;
-   * `win` - the game is won;
-   * `lose` - the game is lost
-   */
-
   start() {
     if (
       this.status === 'idle' ||
