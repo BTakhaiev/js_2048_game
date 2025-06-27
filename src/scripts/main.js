@@ -10,6 +10,7 @@ start.addEventListener('click', () => {
     start.classList.add('restart');
     start.classList.remove('start');
     start.textContent = 'Restart';
+
     game.start();
     updateField();
     updateStatus();
