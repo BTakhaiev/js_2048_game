@@ -12,11 +12,13 @@ start.addEventListener('click', () => {
     start.textContent = 'Restart';
     game.start();
     updateField();
+    updateStatus();
   }
 
   if (start.textContent === 'Restart') {
     game.start();
     updateField();
+    updateStatus();
   }
 });
 
