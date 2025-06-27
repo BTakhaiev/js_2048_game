@@ -18,6 +18,7 @@ start.addEventListener('click', () => {
 
   if (start.textContent === 'Restart') {
     game.start();
+
     updateField();
     updateStatus();
   }
